@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
 
+//this is for git testing
+
 public class UnitConverter extends Activity implements OnClickListener, AdapterView.OnItemSelectedListener{
     /** Called when the activity is first created. */
 	
