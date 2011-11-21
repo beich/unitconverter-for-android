@@ -10,9 +10,19 @@
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            
+            <intent-filter>
+		        <data android:scheme="unitconverter" />
+		        <action android:name="android.intent.action.VIEW" />
+		        <category android:name="android.intent.category.BROWSABLE" />
+		        <category android:name="android.intent.category.DEFAULT" />
+   			</intent-filter>
         </activity>
 		<uses-library android:name="android.test.runner"/>
     </application>
-
+	
+	<instrumentation android:name="android.test.InstrumentationTestRunner"
+    android:targetPackage="training.android.trainingunitconverter"
+    android:label="1" />
 
 </manifest> 

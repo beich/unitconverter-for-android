@@ -1,7 +1,11 @@
 package training.android.trainingunitconverter;
 
 
+import java.util.List;
+
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -10,6 +14,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
+import android.widget.Toast;
 
 //this is for git testing
 
@@ -33,8 +38,46 @@ public class UnitConverter extends Activity implements OnClickListener, AdapterV
     //this is to test the Git repository
 	@Override
     public void onCreate(Bundle savedInstanceState) {
+        
         super.onCreate(savedInstanceState);
+        
+     	//Som++ 
+        //to get the parameter passed from the URI that has launched this app
+        final Intent intent = getIntent();
+        String scheme = intent.getScheme();
+        if(scheme != null){
+	        final Uri myURI=intent.getData();
+	        String queryString = new String();
+	        
+	        if(myURI!=null)
+	        {
+	        	queryString = myURI.getQuery();
+	        }
+	        String split1 = "&";
+	        String split2 = "=";
+	     
+	        if (queryString != null)
+	        {
+	            final String[] arrParameters = queryString.split("&");
+	            for (final String tempParameterString : arrParameters)
+	            {
+	                final String[] arrTempParameter = tempParameterString.split("=");
+	                if (arrTempParameter.length >= 2)
+	                {
+	                    final String parameterKey = arrTempParameter[0];
+	                    final String parameterValue = arrTempParameter[1];
+	                    //do something with the parameters
+	                    Toast.makeText(this, parameterValue, 500).show();
+	                }
+	            }
+	        }
+	       	
+        }
+       	//++Som
+       
+        
         setContentView(R.layout.main);
+        
         
         SpinnerUnit = (Spinner)findViewById(R.id.SpinnerUnit);
         SpinnerUnit.setOnItemSelectedListener(this);
@@ -79,6 +122,8 @@ public class UnitConverter extends Activity implements OnClickListener, AdapterV
        lastStrategy = currentStrategy;
        
        instance = this;
+       
+       
         
     }
     
