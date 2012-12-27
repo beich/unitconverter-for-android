@@ -6,30 +6,30 @@
     >
 
 <LinearLayout android:id="@+id/LinearLayout01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
-<TextView android:text="Type" android:id="@+id/TextView01" android:layout_width="50px" android:layout_height="wrap_content"></TextView>
-<Spinner android:id="@+id/SpinnerUnit" android:layout_width="200px" android:layout_height="wrap_content"></Spinner>
+<TextView android:text="Type" android:id="@+id/TextView01" android:layout_width="50dp" android:layout_height="wrap_content"></TextView>
+<Spinner android:id="@+id/SpinnerUnit" android:layout_width="200dp" android:layout_height="wrap_content"></Spinner>
 </LinearLayout>
 
 <LinearLayout android:id="@+id/LinearLayout02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
-<TextView android:text="Value" android:id="@+id/TextView02" android:layout_width="50px" android:layout_height="wrap_content"></TextView>
-<EditText android:text="" android:id="@+id/EditTextValue" android:layout_width="200px" android:layout_height="wrap_content"></EditText>
+<TextView android:text="Value" android:id="@+id/TextView02" android:layout_width="50dp" android:layout_height="wrap_content"></TextView>
+<EditText android:text="" android:id="@+id/EditTextValue" android:layout_width="200dp" android:layout_height="wrap_content"></EditText>
 </LinearLayout>
 
 <LinearLayout android:id="@+id/LinearLayoutFrom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
-<TextView android:text="From" android:id="@+id/TextViewFrom" android:layout_width="50px" android:layout_height="wrap_content"></TextView>
-<Spinner android:id="@+id/SpinnerFrom" android:layout_width="200px" android:layout_height="wrap_content"></Spinner>
+<TextView android:text="From" android:id="@+id/TextViewFrom" android:layout_width="50dp" android:layout_height="wrap_content"></TextView>
+<Spinner android:id="@+id/SpinnerFrom" android:layout_width="200dp" android:layout_height="wrap_content"></Spinner>
 </LinearLayout>
 
 <LinearLayout android:id="@+id/LinearLayoutTo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
-<TextView android:text="To" android:id="@+id/TextViewTo" android:layout_width="50px" android:layout_height="wrap_content"></TextView>
-<Spinner android:id="@+id/SpinnerTo" android:layout_width="200px" android:layout_height="wrap_content"></Spinner>
+<TextView android:text="To" android:id="@+id/TextViewTo" android:layout_width="50dp" android:layout_height="wrap_content"></TextView>
+<Spinner android:id="@+id/SpinnerTo" android:layout_width="200dp" android:layout_height="wrap_content"></Spinner>
 </LinearLayout>
 
-<Button android:text="Convert" android:id="@+id/Button01" android:layout_width="80px" android:layout_height="wrap_content" android:layout_marginLeft="105px"></Button>
+<Button android:text="Convert" android:id="@+id/Button01" android:layout_width="80dp" android:layout_height="wrap_content" android:layout_marginLeft="105dp"></Button>
 
 <LinearLayout android:id="@+id/LinearLayout03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="horizontal">
-<TextView android:text="Result" android:id="@+id/TextViewString" android:layout_width="50px" android:layout_height="wrap_content"></TextView>
-<EditText android:text="" android:id="@+id/TextViewResult" android:layout_width="200px" android:layout_height="wrap_content"></EditText>
+<TextView android:text="Result" android:id="@+id/TextViewString" android:layout_width="50dp" android:layout_height="wrap_content"></TextView>
+<EditText android:text="" android:id="@+id/TextViewResult" android:layout_width="200dp" android:layout_height="wrap_content"></EditText>
 </LinearLayout>
 
 

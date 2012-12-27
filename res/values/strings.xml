@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="hello">Hello World, UnitConverter!</string>
-    <string name="app_name">TrainingUnitConverter</string>
+    <string name="app_name">UnitConverter</string>
     <string name="unit1">Temperature</string>
     <string name="unit2">Weight</string>
     <string name="unit3">Length</string>
